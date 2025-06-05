@@ -2,38 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Waarko Studio</title>
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <!-- Favicon (shown in browser tab) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- ✅ Optional Styles -->
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
-    }
-    .logo {
-      width: 200px;
-      height: auto;
-    }
-    h1 {
+      background-color: #ffffff;
       color: #333;
+      text-align: center;
     }
+
+    header {
+      background-color: #111;
+      padding: 20px 0;
+    }
+
+    header img {
+      height: 120px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
     p {
-      font-size: 18px;
-      color: #555;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <!-- ✅ Main Site Logo -->
-  <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
 
-  <h1>Welcome to Waarko Studio</h1>
-  <p>We create original and exciting games with passion and creativity.</p>
+  <!-- Header with main site logo -->
+  <header>
+    <img src="Logo.png" alt="Waarko Studio Logo">
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <h1>Welcome to Waarko Studio</h1>
+    <p>We make original games with heart, imagination, and code. Stay tuned as we build something amazing together.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Waarko Studio. All rights reserved.
+  </footer>
+
 </body>
 </html>
