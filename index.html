@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Waarko Studio</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="Logo2.png" />
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -21,29 +22,49 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
+      padding: 20px;
     }
 
     img.logo {
-      max-width: 200px;
-      margin-top: 40px;
+      max-width: 80%;
+      height: auto;
+      max-height: 200px;
+      margin-top: 20px;
     }
 
     h1 {
       font-size: 2em;
-      margin-top: 40px;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
 
     p {
       max-width: 600px;
-      margin: 20px auto;
       font-size: 1.1em;
       line-height: 1.6;
+      margin: 10px auto 30px;
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: auto;
+      padding: 20px 0;
       font-size: 0.9em;
       color: #ccc;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      img.logo {
+        max-height: 150px;
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
