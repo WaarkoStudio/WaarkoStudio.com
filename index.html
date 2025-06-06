@@ -14,22 +14,25 @@
       text-align: center;
     }
 
-    nav {
+    header {
       background-color: #cdd6ff;
-      padding: 15px 30px;
       display: flex;
       justify-content: center;
+      padding: 15px 30px;
       gap: 30px;
       font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    nav a {
+    header a {
       color: #000;
       text-decoration: none;
       transition: color 0.3s;
     }
 
-    nav a:hover {
+    header a:hover {
       color: #555;
     }
 
@@ -60,17 +63,18 @@
   </style>
 </head>
 <body>
-  <!-- Logo -->
-  <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
 
-  <!-- Navigation -->
-  <nav>
+  <!-- Navigation Bar (now at top) -->
+  <header>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="download.html">Download</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="blog.html">Blog</a>
-  </nav>
+  </header>
+
+  <!-- Logo -->
+  <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
 
   <!-- Main Content -->
   <main>
@@ -82,5 +86,6 @@
   <footer>
     © 2025 Waarko Studio. All rights reserved.
   </footer>
+
 </body>
 </html>
