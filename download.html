@@ -4,116 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Download - Waarko Studio</title>
-  <link rel="icon" type="image/png" href="Logo2.png" />
-
+  <link rel="icon" href="favicon-64x64.png" type="image/png">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #111;
-      color: white;
-      min-height: 100vh;
+      color: #fff;
+      text-align: center;
     }
 
-    /* Nav Bar (same as index.html) */
-    nav {
-      width: 100%;
-      background-color: #000;
-      padding: 15px 0;
-      text-align: center;
-      border-bottom: 1px solid #222;
+    header {
+      background-color: #cdd6ff;
+      display: flex;
+      justify-content: center;
+      padding: 15px 30px;
+      gap: 30px;
+      font-weight: bold;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    nav a {
-      color: white;
+    header a {
+      color: #000;
       text-decoration: none;
-      margin: 0 20px;
-      font-size: 16px;
-      font-weight: bold;
       transition: color 0.3s;
     }
 
-    nav a:hover {
-      color: #00ffff;
+    header a:hover {
+      color: #555;
     }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    img.logo {
-      max-width: 220px;
-      margin: 30px 0;
+    .logo {
+      display: block;
+      margin: 40px auto 20px;
+      width: 200px;
+      max-width: 90%;
     }
 
     h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 2.5em;
+      margin-top: 10px;
     }
 
-    .download-section {
-      margin-top: 20px;
+    p {
+      font-size: 1.2em;
+      color: #ccc;
     }
 
-    .download-link {
-      display: inline-block;
-      background-color: #222;
-      color: #00ffff;
-      padding: 12px 20px;
-      border: 1px solid #00ffff;
-      border-radius: 8px;
+    .downloads {
+      margin: 40px auto;
+      max-width: 600px;
+    }
+
+    .downloads a {
+      display: block;
+      margin: 15px 0;
+      color: #8ab4f8;
       text-decoration: none;
-      margin: 10px;
-      transition: background-color 0.3s, transform 0.2s;
+      font-size: 1.1em;
     }
 
-    .download-link:hover {
-      background-color: #00ffff;
-      color: #000;
-      transform: scale(1.05);
+    .downloads a:hover {
+      text-decoration: underline;
     }
 
     footer {
+      background-color: #000;
+      padding: 20px;
       margin-top: 60px;
       font-size: 0.9em;
-      color: #ccc;
-      text-align: center;
-      padding-bottom: 20px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
   <!-- Navigation Bar -->
-  <nav>
+  <header>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="download.html">Download</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="blog.html">Blog</a>
-  </nav>
+  </header>
 
-  <div class="container">
-    <!-- Logo -->
-    <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
+  <!-- Logo -->
+  <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
 
+  <!-- Main Content -->
+  <main>
     <h1>Download Center</h1>
+    <p>Get the latest builds, demos, and files from Waarko Studio</p>
 
-    <div class="download-section">
-      <a href="File1/GameBuild1.zip" class="download-link" download>Download Game Build 1</a>
-      <a href="File1/GameBuild2.zip" class="download-link" download>Download Game Build 2</a>
+    <div class="downloads">
+      <!-- Example download links -->
+      <a href="File1/game-v1.zip" download>Download Game v1</a>
+      <a href="File1/art-assets.zip" download>Download Art Assets</a>
     </div>
-  </div>
+  </main>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Waarko Studio. All rights reserved.
+    © 2025 Waarko Studio. All rights reserved.
   </footer>
 
 </body>
