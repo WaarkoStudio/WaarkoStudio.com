@@ -2,15 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Waarko Studio</title>
-
-  <!-- Link to external CSS if needed -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="Logo2.png" />
-
+  <link rel="icon" href="favicon-64x64.png" type="image/png" />
   <style>
     body {
       margin: 0;
@@ -21,62 +15,73 @@
     }
 
     header {
-      background-color: #222;
-      padding: 20px;
+      background-color: #cdd6ff;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    header img {
-      max-height: 50px;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #000;
       text-decoration: none;
       font-weight: bold;
+      margin: 0 20px;
     }
 
     nav a:hover {
-      color: #00bfff;
+      text-decoration: underline;
     }
 
-    main {
+    .logo {
+      margin: 40px auto 20px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .main-content {
       padding: 40px 20px;
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #ccc;
-      padding-bottom: 20px;
+      background-color: #000;
+      padding: 20px;
+      margin-top: 40px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with Logo and Navigation -->
+  <!-- Navbar -->
   <header>
-    <img src="Logo.png" alt="Waarko Studio Logo" />
     <nav>
       <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="download.html">Download</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Welcome to <strong>Waarko Studio</strong></h1>
-    <p>
-      We make original games with heart, imagination, and code.<br>
-      Stay tuned as we build something amazing together.
-    </p>
-  </main>
+  <!-- Logo -->
+  <div class="logo">
+    <img src="Logo2.png" alt="Waarko Studio Logo" />
+  </div>
 
+  <!-- Welcome Section -->
+  <div class="main-content">
+    <h1>Welcome to Waarko Studio</h1>
+    <p>Crafting creative games and experiences.</p>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Waarko Studio. All rights reserved.
+    © 2025 Waarko Studio. All rights reserved.
   </footer>
 
 </body>
