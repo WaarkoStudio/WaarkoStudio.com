@@ -2,84 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Waarko Studio</title>
-  <link rel="icon" href="favicon-64x64.png" type="image/png" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #111;
-      color: white;
-      text-align: center;
+      color: #fff;
     }
 
-    header {
-      background-color: #cdd6ff;
+    .navbar {
       display: flex;
-      justify-content: center;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #cdd6ff;
+      padding: 0.5rem 1rem;
     }
 
-    nav a {
-      color: #000;
+    .navbar img {
+      height: 50px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
       text-decoration: none;
+      color: #000;
       font-weight: bold;
-      margin: 0 20px;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       text-decoration: underline;
     }
 
-    .logo {
-      margin: 40px auto 20px;
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #111;
     }
 
-    .logo img {
-      height: 100px;
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
-    .main-content {
-      padding: 40px 20px;
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
 
     footer {
-      background-color: #000;
+      text-align: center;
       padding: 20px;
-      margin-top: 40px;
-      color: #aaa;
+      background-color: #111;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav>
+  <nav class="navbar">
+    <img src="Logo.png" alt="Waarko Studio Logo">
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="download.html">Download</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="blog.html">Blog</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <!-- Logo -->
-  <div class="logo">
-    <img src="Logo.png" alt="Waarko Studio Logo" />
-  </div>
-
-  <!-- Welcome Section -->
-  <div class="main-content">
+  <section class="hero">
     <h1>Welcome to Waarko Studio</h1>
     <p>Crafting creative games and experiences.</p>
-  </div>
+  </section>
 
-  <!-- Footer -->
   <footer>
     © 2025 Waarko Studio. All rights reserved.
   </footer>
