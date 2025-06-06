@@ -12,25 +12,51 @@
       font-family: Arial, sans-serif;
       background-color: #111;
       color: white;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 15px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #222;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      min-height: 100vh;
+      padding: 40px 20px;
     }
 
     .logo {
       max-width: 220px;
-      margin-top: 40px;
+      margin-bottom: 30px;
     }
 
     h1 {
-      margin-top: 30px;
       font-size: 2em;
+      margin-bottom: 20px;
     }
 
     .download-section {
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     .download-link {
@@ -55,19 +81,32 @@
       margin-top: 60px;
       font-size: 0.9em;
       color: #ccc;
+      text-align: center;
+      padding-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="download.html">Download</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+  </nav>
 
-  <h1>Download Center</h1>
+  <div class="container">
+    <!-- Logo -->
+    <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
 
-  <div class="download-section">
-    <a href="File1/GameBuild1.zip" class="download-link" download>Download Game Build 1</a>
-    <a href="File1/GameBuild2.zip" class="download-link" download>Download Game Build 2</a>
+    <h1>Download Center</h1>
+
+    <div class="download-section">
+      <a href="File1/GameBuild1.zip" class="download-link" download>Download Game Build 1</a>
+      <a href="File1/GameBuild2.zip" class="download-link" download>Download Game Build 2</a>
+    </div>
   </div>
 
   <footer>
