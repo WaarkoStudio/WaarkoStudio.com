@@ -30,7 +30,7 @@
     header a {
       color: #7dc4ff;
       text-decoration: none;
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
 
     header a:hover {
@@ -54,9 +54,13 @@
       color: #ccc;
     }
 
-    .learn-more-button {
+    .button-container {
+      margin-top: 30px;
+    }
+
+    .button-container a {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px;
       padding: 12px 25px;
       background-color: #1e253b;
       color: #7dc4ff;
@@ -66,7 +70,7 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    .learn-more-button:hover {
+    .button-container a:hover {
       background-color: #2d3759;
       color: #ffffff;
     }
@@ -84,7 +88,7 @@
 
   <!-- Navigation Bar -->
   <header>
-    <a href="https://waarkostudio.github.io/WaarkoStudio.com/home.html">Home</a>
+    <a href="home.html">Home</a>
     <a href="about.html">About</a>
     <a href="download.html">Download</a>
     <a href="portfolio.html">Portfolio</a>
@@ -98,7 +102,12 @@
   <main>
     <h1>Welcome to Waarko Studio</h1>
     <p>Crafting creative games and experiences.</p>
-    <a href="about.html" class="learn-more-button">Learn More</a>
+
+    <!-- Buttons -->
+    <div class="button-container">
+      <a href="about.html">Learn More</a>
+      <a href="download.html">Downloads</a>
+    </div>
   </main>
 
   <!-- Footer -->
