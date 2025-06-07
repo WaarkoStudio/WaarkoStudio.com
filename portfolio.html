@@ -9,46 +9,62 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #000;
+      background-color: #0c0f1a;
       color: #fff;
       text-align: center;
     }
 
     header {
-      background-color: #cdd6ff;
+      background-color: #111421;
       display: flex;
       justify-content: center;
       padding: 15px 30px;
       gap: 30px;
       font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     header a {
-      color: #000;
+      color: #7dc4ff;
       text-decoration: none;
+      transition: color 0.3s;
     }
 
     header a:hover {
-      color: #444;
+      color: #ffffff;
     }
 
     .logo {
       display: block;
       margin: 40px auto 20px;
       width: 200px;
+      max-width: 90%;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 40px;
     }
 
     .portfolio-image {
       max-width: 90%;
       height: auto;
-      margin: 30px auto;
-      border: 2px solid #444;
+      margin: 0 auto 40px;
+      border: 2px solid #2d3759;
+      border-radius: 10px;
     }
 
     footer {
-      background-color: #000;
+      background-color: #0c0f1a;
       padding: 20px;
-      margin-top: 40px;
       font-size: 0.9em;
       color: #aaa;
     }
@@ -56,24 +72,30 @@
 </head>
 <body>
 
+  <!-- Navigation Bar -->
   <header>
-    <a href="index.html">Home</a>
+    <a href="home.html">Home</a>
     <a href="about.html">About</a>
     <a href="download.html">Download</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="blog.html">Blog</a>
   </header>
 
+  <!-- Logo -->
   <img src="Logo.png" alt="Waarko Studio Logo" class="logo" />
 
-  <h1>Our Portfolio</h1>
-  <p>Explore some of the games and experiences we've built.</p>
+  <!-- Main Content -->
+  <main>
+    <h1>Our Portfolio</h1>
+    <p>Explore some of the games and experiences we've built.</p>
 
-  <!-- Portfolio Image -->
-  <img src="File2/portfolio-image.png" alt="Portfolio Sample" class="portfolio-image" />
+    <!-- Portfolio Image -->
+    <img src="File2/portfolio-image.png" alt="Portfolio Sample" class="portfolio-image" />
+  </main>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Waarko Studio. All rights reserved.
+    © 2025 Waarko Studio. All rights reserved.
   </footer>
 
 </body>
