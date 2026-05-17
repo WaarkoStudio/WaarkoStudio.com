@@ -255,13 +255,33 @@
       margin-bottom: 20px;
     }
 
-    .game-card h3 {
+    .game-title-block {
+      margin-bottom: 16px;
+      line-height: 1.05;
+    }
+
+    .game-title-block .line1 {
+      display: block;
       font-family: 'Orbitron', monospace;
-      font-size: 1.8em;
+      font-size: clamp(1.6em, 4vw, 2.6em);
       font-weight: 900;
-      color: #fff;
-      margin-bottom: 14px;
-      letter-spacing: 0.05em;
+      color: #ffffff;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .game-title-block .line2 {
+      display: block;
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1.6em, 4vw, 2.6em);
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-left: 4.2em;
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .game-card p {
@@ -352,7 +372,10 @@
     <h2>Our Next <span>Game</span></h2>
     <div class="game-card">
       <span class="game-tag">In Development</span>
-      <h3>WARHEAD ORIGIN</h3>
+      <div class="game-title-block">
+        <span class="line1">Warhead</span>
+        <span class="line2">Origin</span>
+      </div>
       <p>A story-driven action PC game built around cinematic storytelling, immersive gameplay, and a world worth getting lost in. More details coming soon.</p>
     </div>
   </div>
